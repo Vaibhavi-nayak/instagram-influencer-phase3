@@ -1,0 +1,46 @@
+{
+  "project_title": "Instagram Influencer Analysis and Influence Score Prediction",
+  "phase": "Phase 3 - Model Deployment with Streamlit",
+  "team_members": [
+    {
+      "name": "Vaibhavi Nayak",
+      "reg_no": "251090700139"
+    },
+    {
+      "name": "Prakruthi K S",
+      "reg_no": "2510907000197"
+    }
+  ],
+  "course": "MCA 5141 - Machine Learning Lab",
+  "model_name": "Gradient Boosting Regressor",
+  "model_category": "Ensemble (Boosting)",
+  "hyperparameters": {
+    "n_estimators": 80,
+    "learning_rate": 0.04,
+    "max_depth": 2,
+    "random_state": 42
+  },
+  "evaluation_metrics": {
+    "cv_mae": 4.414,
+    "cv_rmse": 6.819,
+    "val_mae": 5.306,
+    "val_rmse": 12.679,
+    "val_r2": 0.049,
+    "ext_test_mae": 1.952,
+    "ext_test_rmse": 2.357
+  },
+  "features": {
+    "numeric": [
+      "posts",
+      "followers",
+      "avg_likes",
+      "60_day_eng_rate",
+      "new_post_avg_like",
+      "total_likes"
+    ],
+    "categorical": [
+      "country"
+    ],
+    "target": "influence_score"
+  }
+}
